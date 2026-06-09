@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selection</title>
+    <style>
+        /*element selector*/
+        div{
+            /*background-color: brown;*/
+        }
+        /*class selector*/
+        .red{
+            background-color: bisque;
+        }
+        /*id selector*/
+        #green{
+            background-color: chartreuse;
+        }
+        /*child selector*/
+        div > p{
+            color: chocolate;
+            background-color: rgb(103, 29, 151);
+        }
+        /*decent selector*/
+        div p{
+            color: chocolate;
+            background-color: rgb(144, 160, 95);
+        }
+        /*universal selector*/
+        * {
+            margin: 0%;
+        padding: 0;        }
+        /*Pseudo selector*/
+        a:visited{
+            color: rgb(231, 135, 10);
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: brown;
+        }
+        a:hover{
+            background-color: rgb(35, 228, 228);
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        i am here
+    </div>
+    <div>
+        
+        i am dev
+    </div>
+    <div class="red">
+        who are you man
+        <p>hey suman guardianb</p>
+    </div>
+    <div id="green">
+        i am kumar shanu
+    </div>
+    <article>
+        <div>
+            
+            hey bhau
+
+        </div>
+    </article>
+    <a href="https://www.google.com">Go to Google And Open IT</a>
+    <a href="https://www.facebook.com">Go to FB And Open IT</a>
+    
+</body>
+</html>
