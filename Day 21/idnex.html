@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{/*specificity = 10*/
+            color: black;
+        }
+        .bro{/*specificity = 10*/
+            color: rgb(255, 174, 12);
+            /*color: maroon !important;*/
+        }
+        h1.hey{ /*h1 specificity is 1 and . hey class specificity is 10 then it wil be 11
+            so the text color will be aqua*/
+            color: aqua;
+        }
+        .sunn{/*specificity = 10*/
+            color: rgb(25, 238, 75);
+        }
+        /*calculate the specificity of this class then it will  be 1+ 10+10+10+10= 41*/
+        h1.hey.bro-class[href]:hover {
+        color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+    <h5/* inline css is pririor than class attributes style="color: black;"*/></h5>
+        <h1 class="hey bro sunn">css types of guild</h1>
+    </div>
+    <h5>inline css is pririor than class attributes style="color: black;"</h5>
+</body>
+</html>
