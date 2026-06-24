@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables</title>
+    <style>
+.nav{
+background-color: var(--color)
+}
+:root{
+    --color: blue;
+    --seccolor: rgb(163, 163, 237);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: var(--seccolor)
+    
+}
+ul {
+    display: flex;
+    margin: 2px;
+    padding: 2px;
+    border: 4px solid rgb(1, 2, 2);
+    opacity: 0.6;
+}
+ul li{
+    list-style: none;
+    padding: 32px;
+}
+ul li:first-child{
+    background-color: yellow;
+    border: 5px solid rgb(215, 90, 90);
+    border-style: ridge;
+}
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>contact</li>
+            <li>About</li>
+            <li>Dressed</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus debitis neque voluptatum itaque inventore
+        perspiciatis ab quibusdam assumenda explicabo ratione ut est reiciendis, ea error, expedita sunt harum quisquam
+        a.
+    </div>
+</body>
+
+</html>
