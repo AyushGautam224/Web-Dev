@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>More on CSS selectors</title>
+</head>
+<style>
+    /*.box:first-child {
+        background-color: bisque;
+
+    }
+    .box::first-line{
+        background-color: dark;
+    }
+    /*.boxes *{
+color: blue;
+border: 2px solid black;
+    }
+   p,a,.box,[data-color="primary"]{
+        margin-top: 45px;
+        padding-top: 45px;
+    }
+    .box:nth-child(1){
+        border-color: red;
+    }
+    .box:nth-last-child(1){
+background-color: brown;
+    }
+    .boxes::before{
+        content: "hey ayush btao";
+
+    }
+    .boxes::after{
+        content: "ayus G";
+        color: blueviolet;
+    }*/
+ ::selection{
+        color: rgb(255, 155, 25);
+        background-color: black;
+    }
+    .box::first-letter{
+        color: violet;
+        font-size: 29px;
+    }
+    .text{
+        margin: 13px;
+    }
+    input::placeholder{
+        color: blue;
+        margin: 5px;
+        padding: 22px;
+    }
+
+</style>
+
+<body>
+    <div class="boxes">
+        <div class="box">hey i am the firdt child</div>
+        <div class="box">who are yo uthe am,n</div>
+        <div class="box">yue si am athe on ewho is there</div>
+        <input type="text" placeholder="type your name here">
+    </div>
+
+</body>
+
+</html>
