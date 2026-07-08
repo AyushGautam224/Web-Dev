@@ -1,0 +1,149 @@
+.logo {}
+
+.logo img {
+    width: 164px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    font-family: "Segoe UI";
+}
+
+.right ul {
+    gap: 34px;
+    display: flex;
+}
+
+.right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right ul li span {
+    padding: 0 9px;
+}
+
+li img {
+    height: 18px;
+    width: 20px;
+}
+
+.first {
+    display: flex;
+    /* background-color: aquamarine; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    gap: 24px;
+    font-family: sans-serif;
+}
+
+/* .first button {
+    background-color: #00b6d1;
+    padding: 12px 16px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+} */
+
+.first span {
+    font-size: 34px;
+}
+
+.first p {
+    font-size: 23px;
+    width: 44vw;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.second {
+    max-width: 55vw;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #00b6d1; */
+}
+
+.btn {
+    background-color: #00b6d1;
+    padding: 12px 16px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    margin: 12px 0;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    max-width: 74vw;
+    justify-content: center;
+    align-items: center;
+
+    justify-content: center;
+}
+
+.green {
+    background-color: green
+}
+
+.item {
+    padding: 23px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.item-lang {
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 43px;
+}
+
+
+.download :nth-child(2) {
+    font-size: 23px
+}
+
+.download img {
+    height: 40px;
+    width: 40px;
+    padding: 0 12px;
+}
+
+.download {
+    display: flex;
+    align-items: center;
+    font-family:sans-serif;
+    gap: 10px;
+}
+@media screen and (max-width: 1145px){
+    .grid{
+        /* display: grid; */
+        grid-template-columns: 1fr;
+        /* gap: 12px; */
+        /* background-color: red; */
+    }
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
