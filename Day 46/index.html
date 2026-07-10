@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container {
+            background-color: rgb(66, 191, 191);
+            height: 80vh;
+            width: 30vw;
+        }
+
+        .box {
+            background-color: navajowhite;
+            width: 34px;
+            height: 45px;
+            /* animation: AyushAnimation;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function:cubic-bezier(0, 0.49, 0.84,-0.34);
+            animation-delay: 1s;
+            /* animation-direction: alternate-reverse; 
+            animation-play-state: paused;  
+            or you can use only one syntax for it is given below
+            */
+            animation: AyushAnimation 3s ease-in-out 1,
+            ayush2 3s ease-in-out 1 /*backwards ,forwards*/;
+        }
+
+        @keyframes AyushAnimation {
+            from {
+                /* transform: translateX(10px); */
+                background-color: rebeccapurple;
+            }
+
+            to {
+                transform: translateX(1000px);
+                background-color: yellowgreen;
+            }
+        }
+        @keyframes ayush2 {
+            0%{
+                transform: rotate(100deg);
+            }
+            5%{
+                transform: rotate(200deg);
+            }
+            20%{transform: rotate(220deg);}
+            50%{transform: rotate(300deg);}
+            80%{transform: rotate(310deg);}
+            100%{transform: rotate(330deg);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">hoo</div>
+    </div>
+</body>
+
+</html>
