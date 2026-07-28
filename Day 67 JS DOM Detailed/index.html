@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+.box{
+    height: 45px;
+    width: 56px;
+    border: 2px solid blue;
+    margin: 5px;
+    padding: 5px;
+}
+    </style>
+
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!-- hello world
+doc
+VM63:1 Uncaught ReferenceError: doc is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM63:1Understand this error
+document.body
+<body>​…​</body>​<style>​…​</style>​<div class=​"container">​…​</div>​<script src=​"index.js">​</script>​</body>​
+document.body.hasChildNodes
+ƒ hasChildNodes() { [native code] }
+document.body.ChildNodes
+undefined
+document.body.childNodes
+NodeList(7) [text, style, text, div.container, text, script, text]
+document.body.childNodes[0]
+#textassignedSlot: nullbaseURI: "http://127.0.0.1:3000/index.html"childNodes: NodeList []data: "\n    "firstChild: nullisConnected: truelastChild: nulllength: 5nextElementSibling: stylenextSibling: stylenodeName: "#text"nodeType: 3nodeValue: "\n    "ownerDocument: documentparentElement: bodyparentNode: bodypreviousElementSibling: nullpreviousSibling: nulltextContent: "\n    "wholeText: "\n    "[[Prototype]]: Text
+document.body.childNodes[1]
+<style>​…​</style>​.box{
+    height: 45px;
+    width: 56px;
+    border: 2px solid blue;
+    margin: 5px;
+    padding: 5px;
+}</style>​
+document.body.childNodes[1].childNodes
+NodeList [text]0: textlength: 1[[Prototype]]: NodeList
+cont
+VM418:1 Uncaught ReferenceError: cont is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM418:1Understand this error
+let cont = document.body.childNodes[1]
+undefined
+cont
+<style>​…​</style>​.box{
+    height: 45px;
+    width: 56px;
+    border: 2px solid blue;
+    margin: 5px;
+    padding: 5px;
+}</style>​
+cont.f
+undefined
+cont.firstChild
+.box{
+    height: 45px;
+    width: 56px;
+    border: 2px solid blue;
+    margin: 5px;
+    padding: 5px;
+}
+cont.lastChild
+.box{
+    height: 45px;
+    width: 56px;
+    border: 2px solid blue;
+    margin: 5px;
+    padding: 5px;
+}
+cont.firstElementChild
+null
+cont.lastElementChild
+null -->
