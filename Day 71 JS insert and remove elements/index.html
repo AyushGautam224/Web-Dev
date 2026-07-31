@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container red bg-green">
+        <div class="box" style="display : flex;" data-createdby="Ayush" data-conceptby="Ayush Ji">
+            hey i am a box
+            hey i am a box
+<!-- document.querySelector(".box").remove() -->
+            <!-- document.querySelector(".box").innerHTML = "Hey i Am ayush "
+            'Hey i Am ayush '
+            document.querySelector(".box").innerHTML
+            'Hey i Am ayush '
+            document.querySelector(".container").innerHTML
+            '\n <div class="box">Hey i Am ayush </div>\n '
+            document.querySelector(".container").outerHTML
+            '<div class="container">\n <div class="box">Hey i Am ayush </div>\n </div>' -->
+
+            <!-- document.querySelector(".box").hasAttribute("style")
+            true
+            document.querySelector(".box").hasAttribute("style")
+            true
+            document.querySelector(".box").getAttribute("style")
+            'display : flex;'
+            document.querySelector(".box").setAttribute("style" , "display: inline")
+            undefined -->
+            <!-- document.querySelector(".box").attributes
+            NamedNodeMap {0: class, 1: style, class: class, style: style, length: 2}
+            document.querySelector(".box").removeAttribute("style") -->
+            <!-- document.designMode = "on"
+            'on' 
+            document.querySelector(".box").dataset-->
+
+        </div>
+    </div>
+    <script>
+        let div = document.createElement("div");
+        div.innerHTML = "i have inserted <b>by ayush</b>"
+        div.setAttribute("class", " created");
+        // document.querySelector(".container").append(div)
+        // document.querySelector(".container").before(div)
+        let cont = document.querySelector(".container")
+        cont.insertAdjacentHTML("afterend", "<b> i am here under water help Lorem21</b>")
+    </script>
+</body>
+
+</html>
