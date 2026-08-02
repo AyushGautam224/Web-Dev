@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubling</title>
+    <style>
+        .child {
+            background-color: aliceblue;
+            border: 2px solid black;
+            padding: 34px;
+            margin: 34px;
+            cursor: pointer;
+        }
+
+        .childContainer {
+            background-color: rgb(20, 128, 222);
+            border: 2px solid black;
+            margin: 24px;
+            padding: 24px;
+
+        }
+
+        .container {
+            background-color: rgb(7, 216, 7);
+            border: 2px solid black;
+            margin: 14px;
+            padding: 14px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="childContainer">
+            <div class="child">
+                i am a child
+            </div>
+        </section>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("click", (e) => {
+            alert("child was clicked")
+            e.stopPropagation()
+
+        })
+        document.querySelector(".childContainer").addEventListener("click", (e) => {
+            alert("childContainer  was clicked")
+            e.stopPropagation()
+        })
+        document.querySelector(".container").addEventListener("click", (e) => {
+            alert("Container  was clicked")
+            e.stopPropagation()
+        })
+        function getRandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+        // let a = setInterval(() => {
+        //     document.querySelector(".childContainer").style.background = getRandomColor();
+        // }, 1000);
+        let a = setTimeout(() => {
+            document.querySelector(".childContainer").style.background = getRandomColor();
+        }, 5000);
+
+        console.log(a)
+    </script>
+</body>
+
+</html>
