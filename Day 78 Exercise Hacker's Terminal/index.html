@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            background-color: black;
+            color: green;
+            font-size: 19px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- create a hacking simulator which has green background and it shows these msgs with random delay of 1 to  7 seconds 
+      "initialising Hacking....",
+        "reading your files ...",
+        "password files detected...",
+        "sending all passwords and personal files to server ....",
+        "cleaning up ...."]      
+          the three dot must blink so that it looks like a reaal terrminal  -->
+
+    <div>initializing Hacking....</div>
+    <script>
+
+
+        const addItem = async (item) => {
+            await randomDelay();
+            let div = document.createElement("div");
+            div.innerHTML = item;
+            document.body.append(div)
+        }
+        const randomDelay = () => {
+
+            return new Promise((resolve, reject) => {
+                timeout = 1 + 6 * Math.random()
+                setTimeout(() => {
+                    resolve()
+
+                }, timeout * 1000);
+
+            })
+        }
+
+        async function main() {
+
+         let t =    setInterval(() => {
+                let last = document.body.getElementsByTagName("div");
+                last = last[last.length-1]
+                if(last.innerHTML.endsWith("...")) {
+                    last.innerHTML = last.innerHTML.slice(0, last.innerHTML.length-3)
+                }
+                else {
+
+                    last.innerHTML = last.innerHTML + "."
+                }
+
+            }, 700);
+
+
+
+
+            let text = [
+
+                "initialising Hacking now reading your data",
+                "reading your files",
+                "password files detecte",
+                "sending all passwords and personal files to server",
+                "cleaning up"]
+            // the three dot must blink so that it looks like a reaal terrminal -->
+
+            for (const item of text) {
+                await addItem(item)
+            }
+            await randomDelay(
+                clearInterval(t)
+            )
+        }
+        main()
+
+    </script>
+
+</body>
+
+</html>
