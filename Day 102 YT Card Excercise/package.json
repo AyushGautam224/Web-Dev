@@ -1,0 +1,23 @@
+{
+  "name": "designthelayout",
+  "version": "1.0.0",
+  "description": "this is a soln",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "keywords": [
+    "cwh",
+    "js",
+    "py"
+  ],
+  "author": "ayush",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  },
+  "dependencies": {
+    "vite": "^7.1.12"
+  }
+}
