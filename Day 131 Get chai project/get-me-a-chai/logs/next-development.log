@@ -1,0 +1,10 @@
+{"timestamp":"00:00:02.522","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:05.808","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:00:08.611","source":"Server","level":"WARN","message":"[next-auth][warn][NEXTAUTH_URL] \"\\nhttps://next-auth.js.org/warnings#nextauth_url\""}
+{"timestamp":"00:01:19.037","source":"Server","level":"LOG","message":"✓ Compiled in 781ms"}
+{"timestamp":"00:01:26.996","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:01:27.178","source":"Server","level":"WARN","message":"[next-auth][warn][NEXTAUTH_URL] \"\\nhttps://next-auth.js.org/warnings#nextauth_url\""}
+{"timestamp":"01:20:18.746","source":"Server","level":"LOG","message":"MongoDB Connected: localhost"}
+{"timestamp":"01:20:18.767","source":"Server","level":"ERROR","message":"(node:6752) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.\n(Use `node --trace-warnings ...` to show where the warning was created)"}
+{"timestamp":"01:20:19.100","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"01:33:23.797","source":"Server","level":"LOG","message":"MongoDB Connected: localhost"}
